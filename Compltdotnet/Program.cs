@@ -27,6 +27,7 @@ namespace Compltdotnet
             //p.Salary();
             //Console.ReadKey();
             p.ExeEmployeee();
+
         }
     }
 
