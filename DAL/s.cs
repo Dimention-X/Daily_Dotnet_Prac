@@ -49,7 +49,7 @@ namespace DAL
             conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = String.Format("Update student set First_Name = '"+ FirstName + "',Last_Name ='" + lastName + "'," + Age + "where SNO="+SNO+"");
+            cmd.CommandText = String.Format("Update student set First_Name = '"+ FirstName + "', Last_Name ='" + lastName + "', Age =" + Age + "where SNO = " + SNO +"");
             cmd.CommandType = CommandType.Text;
             try
             {
@@ -74,7 +74,7 @@ namespace DAL
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = String.Format("delete from stundent where SNO=" + Sno + "");
+            cmd.CommandText = String.Format("Delete from student where SNO ="+Sno+"");
             cmd.CommandType = CommandType.Text;
             try
             {
