@@ -49,5 +49,17 @@ namespace Properties_and_Indexers
 
 
         }
+
+        public class Customer
+        {
+            private int m_id = -1;
+            private string m_name = string.Empty;
+
+            public Customer(int id, string name)
+            {
+                this.m_id = id;
+                this.m_name = name;
+            }
+        }
     }
 }
