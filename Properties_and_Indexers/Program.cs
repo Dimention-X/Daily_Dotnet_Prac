@@ -23,15 +23,31 @@ namespace Properties_and_Indexers
         }
     }
 
+
+
     class Program
     {
        static void Main(string[] args)
         {
+
+
+            // Operation => 1 Student class  
+
             Student s = new Student();
             s.Code = "C#";
             s.Name = "Akhilesh KS";
             s.Age = 24;
             Console.WriteLine(s);     
+
+            /* Operations 2,3,4 types of Prop
+             * 1> Reda Only Porp. => Accomplished by only heaving a get accessor.
+             * 2> Write only prop. => Accomplised by only heaving the set accssor.
+             * 3> R/W porp. => both the get and set accssor.
+             */
+
+
+
+
         }
     }
 }
