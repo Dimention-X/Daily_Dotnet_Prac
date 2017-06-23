@@ -79,13 +79,5 @@ namespace Properties_and_Indexers
         {
             arr = new int[size];
         }
-
-        public int this[int index]
-            {
-              get {return arr[index];}
-              set {arr[index]= value;}
-            }
-        public int length {get { return arr.Length;}}
-             
     }
 }
