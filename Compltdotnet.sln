@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compltdotnet", "Compltdotne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genrics", "Genrics\Genrics.csproj", "{1E4D0722-10C9-4076-AD89-03710A5D6191}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temporary_Variable", "Temporary_Variable\Temporary_Variable.csproj", "{8F2D056E-9F1D-4645-A1AF-7E80B7B9D9E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1E4D0722-10C9-4076-AD89-03710A5D6191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E4D0722-10C9-4076-AD89-03710A5D6191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E4D0722-10C9-4076-AD89-03710A5D6191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2D056E-9F1D-4645-A1AF-7E80B7B9D9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2D056E-9F1D-4645-A1AF-7E80B7B9D9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2D056E-9F1D-4645-A1AF-7E80B7B9D9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2D056E-9F1D-4645-A1AF-7E80B7B9D9E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
