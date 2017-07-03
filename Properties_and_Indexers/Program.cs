@@ -58,7 +58,7 @@ namespace Properties_and_Indexers
 
             for (int i = 0; i < obj.length; i++)
 			{
-                  obj[i]=(Convert.ToInt32)Console.ReadLine();
+                  obj[i]=int.Parse(Console.ReadLine());
 			}
 
             // showing the inseted data.
@@ -87,5 +87,12 @@ namespace Properties_and_Indexers
             }
         public int length {get { return arr.Length;}}
              
+    }
+
+    // almost class feels like a virtual array.
+
+    class IndexerDemo
+    {
+        private string[]  name
     }
 }
