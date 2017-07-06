@@ -45,21 +45,54 @@ namespace Properties_and_Indexers
              * 3> R/W porp. => both the get and set accssor.
              */
 
+            Console.WriteLine("************************* Indexers ******************************************");
 
+            IndexerClass obj = new IndexerClass(5);
+            for (int i = 0; i < obj.length; i++)
+			{
+                Console.Write(obj[i]+"");
+                Console.WriteLine();
+			}
 
+            // inserting the data in the indexed object arry.
 
+            for (int i = 0; i < obj.length; i++)
+			{
+                  obj[i]=int.Parse(Console.ReadLine());
+			}
+
+            // showing the inseted data.
+
+            for (int i = 0; i < obj.length; i++)
+			{
+                Console.WriteLine(obj[i]);
+			}
         }
 
-        public class Customer
+        
+    }
+
+    class IndexerClass
+    {
+        int[] arr;
+        public IndexerClass(int size)
         {
-            private int m_id = -1;
-            private string m_name = string.Empty;
-
-            public Customer(int id, string name)
-            {
-                this.m_id = id;
-                this.m_name = name;
-            }
+            arr = new int[size];
         }
+        
+        public int this[int index]
+            {
+              get {return arr[index];}
+              set {arr[index]= value;}
+            }
+        public int length {get { return arr.Length;}}
+             
+    }
+
+    // almost class feels like a virtual array.
+
+    class IndexerDemo
+    {
+        private string[]  name
     }
 }
