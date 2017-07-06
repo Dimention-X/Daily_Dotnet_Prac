@@ -37,7 +37,7 @@ namespace Properties_and_Indexers
             s.Code = "C#";
             s.Name = "Akhilesh KS";
             s.Age = 24;
-            Console.WriteLine(s);     
+            Console.WriteLine(s);
 
             /* Operations 2,3,4 types of Prop
              * 1> Reda Only Porp. => Accomplished by only heaving a get accessor.
@@ -45,7 +45,9 @@ namespace Properties_and_Indexers
              * 3> R/W porp. => both the get and set accssor.
              */
 
-
+            Customer c = new Customer(12,"Akhilesh");
+            Console.WriteLine(c.Age=12); 
+            Console.WriteLine("{0} , {1}",c.ID,c.Name);
 
 
         }
@@ -54,12 +56,40 @@ namespace Properties_and_Indexers
         {
             private int m_id = -1;
             private string m_name = string.Empty;
+            private int age = 0;
 
             public Customer(int id, string name)
             {
                 this.m_id = id;
                 this.m_name = name;
             }
+           
+
+            public int ID
+            {
+                get
+                {
+                    return m_id;
+                }
+            }
+
+            public string Name
+            {
+                get
+                {
+                    return m_name;
+                }
+            }
+
+            public int Age
+            {
+                set
+                {
+                    age = value;
+                }
+            }
+
+
         }
     }
 }
